@@ -18,14 +18,12 @@ Projeto introdutório desenvolvido para praticar lógica de programação e estr
 
 ## Como executar
 
-O código-fonte está atualmente no arquivo `Calc`, sem a extensão convencional `.java`. Para compilar com o fluxo padrão do Java, renomeie o arquivo para `Calculadora.java` e execute:
+É necessário ter o JDK instalado e disponível no PATH. Na pasta do projeto, execute:
 
 ```bash
 javac Calculadora.java
 java Calculadora
 ```
-
-É necessário ter o JDK instalado e disponível no PATH.
 
 ## Exemplo de uso
 
