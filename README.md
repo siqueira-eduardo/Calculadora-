@@ -4,26 +4,37 @@ Projeto introdutório desenvolvido para praticar lógica de programação e estr
 
 ## Funcionalidades
 
-- Leitura de dois números informados pelo usuário.
-- Escolha da operação matemática.
+- Leitura de dois números informados pelo usuário, com validação de entradas não numéricas.
+- Escolha da operação matemática (1 a 4), repetindo a pergunta se a opção for inválida.
 - Adição, subtração, multiplicação e divisão.
 - Tratamento específico para divisão por zero.
-- Mensagem para opção de operação inválida.
+- Possibilidade de fazer várias operações sem reiniciar o programa.
+- Lógica de cálculo separada em um método (`calcular`), coberta por testes.
 
 ## Tecnologia
 
 - Java
 - Classe `Scanner` para entrada de dados.
 - Estrutura `switch` para seleção da operação.
+- Testes simples em Java puro, sem bibliotecas externas.
 
 ## Como executar
 
 É necessário ter o JDK instalado e disponível no PATH. Na pasta do projeto, execute:
 
 ```bash
-javac Calculadora.java
+javac -encoding UTF-8 Calculadora.java
 java Calculadora
 ```
+
+## Testes
+
+```bash
+javac -encoding UTF-8 Calculadora.java CalculadoraTest.java
+java CalculadoraTest
+```
+
+O mesmo teste roda automaticamente no GitHub Actions a cada push.
 
 ## Exemplo de uso
 
@@ -40,10 +51,9 @@ Praticar entrada e saída de dados, variáveis do tipo `double`, estruturas cond
 
 ## Próximas melhorias possíveis
 
-- Validar entradas que não sejam numéricas.
-- Permitir realizar várias operações sem reiniciar o programa.
-- Separar as operações em métodos.
-- Criar testes automatizados.
+- Adicionar novas operações (potência, raiz quadrada, resto).
+- Migrar os testes para JUnit com Maven ou Gradle.
+- Criar uma interface gráfica.
 
 ---
 Projeto de estudo. A documentação será atualizada conforme o código evoluir.
